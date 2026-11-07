@@ -5,8 +5,8 @@ export class DeckDeleted extends CastleAPIError {}
 export class UploadTooLarge extends CastleAPIError {}
 
 const API = "https://api.castle.xyz/graphql";
-export const UPLOAD_LIMIT = 10 * 1048576;
-export const TOO_LARGE = "This card is over Castle's 10 MB upload limit. Remove some media and try again.";
+export const UPLOAD_LIMIT = 100000000 * 1048576;
+export const TOO_LARGE = "This card is over Castle's 100 TB upload limit. Remove some media and try again.";
 const DECK_GONE = "permission to view this deck";
 const USER_FIELDS = "userId username token isAnonymous photo{avatarUrl smallAvatarUrl}";
 
